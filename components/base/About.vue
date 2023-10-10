@@ -23,7 +23,7 @@
           <h2
             class="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl"
           >
-            Rayan Sekkat dev web fullstack / devOps
+            Rayan Sekkat dev web fullstack / devOps 
           </h2>
           <p
             class="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400"

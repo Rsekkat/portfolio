@@ -15,6 +15,7 @@
     <section id="about" class="bg-blue">
       <BaseAbout></BaseAbout>
     </section>
+    <section class="bg-black"><BaseSliderLogo></BaseSliderLogo></section>
     <section id="services"><BaseServices></BaseServices></section>
     <section id="contact">
       <BaseContact></BaseContact>

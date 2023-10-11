@@ -30,7 +30,7 @@
                 class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"
               >
                 Got a technical issue? Want to send feedback about feature? Need
-                help about an idea, a project ? Let us know. Don't hesitate to
+                help about an idea, a project? Let me know. Don't hesitate to
                 ask for a quote (it's free)
               </p>
               <form action="#" class="space-y-8">
@@ -98,7 +98,7 @@
           style="
             background-image: linear-gradient(
               to right top,
-              rgba(79, 70, 229, 0.2) 0%,
+              rgb(80, 70, 229) 0%,
               transparent 50%,
               transparent 100%
             );
@@ -110,7 +110,7 @@
           style="
             background-image: linear-gradient(
               to left top,
-              rgba(220, 38, 38, 0.2) 0%,
+              rgb(43, 49, 203) 0%,
               transparent 50%,
               transparent 100%
             );

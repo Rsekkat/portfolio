@@ -13,9 +13,11 @@
             Rayan Sekkat
           </h1>
           <p class="mt-6 text-lg leading-8 text-gray-200">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua.
+            Hello and welcome to my website! I'm Rayan Sekkat, a dedicated and
+            passionate Fullstack developer / devOps, specializing in the creation of web
+            applications. With 3 years experience in the development industry,
+            I'm ready to put my expertise to work on your most ambitious
+            projects.
           </p>
         </div>
       </div>

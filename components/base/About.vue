@@ -25,15 +25,6 @@
           >
             Rayan Sekkat dev web fullstack / devOps 
           </h2>
-          <p
-            class="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400"
-          >
-            Hello and welcome to my website! I'm Rayan Sekkat, a dedicated and
-            passionate Fullstack developer, specializing in the creation of web
-            applications. With 3 years' experience in the development industry,
-            I'm ready to put my expertise to work on your most ambitious
-            projects.
-          </p>
         </div>
 
         <div

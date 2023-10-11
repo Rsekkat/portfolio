@@ -20,6 +20,16 @@
     <section id="contact">
       <BaseContact></BaseContact>
     </section>
+    <section
+      style="
+        background-image: linear-gradient(
+          rgb(80, 70, 229) 0%,
+          rgb(43, 49, 203) 100%
+        );
+      "
+    >
+      <BaseFooter></BaseFooter>
+    </section>
   </div>
 </template>
 

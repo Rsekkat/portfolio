@@ -29,16 +29,14 @@
               <p
                 class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"
               >
-                Got a technical issue? Want to send feedback about feature? Need
-                help about an idea, a project? Let me know. Don't hesitate to
-                ask for a quote (it's free)
+                {{ $t("contact_description") }}
               </p>
               <form action="#" class="space-y-8">
                 <div>
                   <label
                     for="email"
                     class="block mb-2 text-sm font-medium text-gray-300 dark:text-gray-300"
-                    >Your email</label
+                    >{{ $t("contact_email") }}</label
                   >
                   <input
                     type="email"
@@ -52,7 +50,7 @@
                   <label
                     for="subject"
                     class="block mb-2 text-sm font-medium text-gray-300 dark:text-gray-300"
-                    >Subject</label
+                    >{{ $t("contact_subject") }}</label
                   >
                   <input
                     type="text"
@@ -66,7 +64,7 @@
                   <label
                     for="message"
                     class="block mb-2 text-sm font-medium text-gray-300 dark:text-gray-400"
-                    >Your message</label
+                    >{{ $t("contact_message") }}</label
                   >
                   <textarea
                     id="message"
@@ -86,7 +84,7 @@
                     border-color: rgb(93, 79, 240);
                   "
                 >
-                  Send message
+                  {{ $t("contact_button") }}
                 </button>
               </form>
             </div>

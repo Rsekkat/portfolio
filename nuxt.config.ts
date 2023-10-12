@@ -1,5 +1,8 @@
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "@nuxtjs/i18n"],
+  i18n: {
+    vueI18n: "./i18n.config.ts",
+  },
   colorMode: {
     preference: "system", // default value of $colorMode.preference
     fallback: "light", // fallback value if not system preference found
@@ -12,8 +15,8 @@ export default defineNuxtConfig({
   },
   components: [
     {
-      path: '~/components',
-      extensions: ['.vue'],
-    }
-  ]
+      path: "~/components",
+      extensions: [".vue"],
+    },
+  ],
 });

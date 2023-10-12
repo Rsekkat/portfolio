@@ -15,9 +15,16 @@
               :href="item.href"
               class="cursor-pointer block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:hover:text-indigo-700 md:dark:indigo-blue-500"
               aria-current="page"
-              >{{ item.name }}</a
+              >{{ $t(item.name) }}</a
             >
           </li>
+          <select
+            v-model="locale"
+            class="bg-transparent text-white text-center"
+          >
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+          </select>
         </ul>
       </div>
     </nav>
@@ -27,20 +34,21 @@
 <script setup>
 const navItems = reactive([
   {
-    name: "Home",
+    name: "home",
     href: "#home",
   },
   {
-    name: "About",
+    name: "about",
     href: "#about",
   },
   {
-    name: "Services",
+    name: "services",
     href: "#services",
   },
   {
-    name: "Contact",
+    name: "contact",
     href: "#contact",
   },
 ]);
+const { locale } = useI18n();
 </script>

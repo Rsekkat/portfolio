@@ -28,7 +28,7 @@
         );
       "
     >
-      <BaseFooter></BaseFooter>
+      <!-- <BaseFooter></BaseFooter> -->
     </section>
   </div>
 </template>

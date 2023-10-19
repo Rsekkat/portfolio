@@ -39,12 +39,10 @@
             ></span>
             <div>
               <h3 class="font-semibold text-xl tracking-tight text-black">
-                Development of customized web applications
+                {{ $t("service_title_1") }}
               </h3>
               <p class="mt-1 text-gray-300">
-                Plan it, create it, launch it. Collaborate seamlessly with all
-                the organization and hit your marketing goals every month with
-                our marketing plan.
+                {{ $t("service_description_1") }}
               </p>
             </div>
           </div>
@@ -68,11 +66,10 @@
             ></span>
             <div>
               <h3 class="font-semibold text-xl tracking-tight text-black">
-                Redesign and optimization of existing sites
+                {{ $t("service_title_2") }}
               </h3>
               <p class="mt-1 text-gray-300">
-                Protect your organization, devices and stay compliant with our
-                structured workflows and custom permissions made for you.
+                {{ $t("service_description_2") }}
               </p>
             </div>
           </div>
@@ -96,11 +93,10 @@
             ></span>
             <div>
               <h3 class="font-semibold text-xl tracking-tight text-black">
-                Integration of e-commerce solutions
+                {{ $t("service_title_3") }}
               </h3>
               <p class="mt-1 text-gray-300">
-                Auto-assign tasks, send Slack messages, and much more. Now power
-                up with hundreds of new templates to help you get started.
+                {{ $t("service_description_3") }}
               </p>
             </div>
           </div>
@@ -124,11 +120,10 @@
             ></span>
             <div>
               <h3 class="font-semibold text-xl tracking-tight text-black">
-                Integration of authentication solutions
+                {{ $t("service_title_4") }}
               </h3>
               <p class="mt-1 text-gray-300">
-                Audit-proof software built for critical financial operations
-                like month-end close and quarterly budgeting.
+                {{ $t("service_description_4") }}
               </p>
             </div>
           </div>
@@ -152,11 +147,10 @@
             ></span>
             <div>
               <h3 class="font-semibold text-xl tracking-tight text-black">
-                Development of APIs and web services
+                {{ $t("service_title_5") }}
               </h3>
               <p class="mt-1 text-gray-300">
-                Craft beautiful, delightful experiences for both marketing and
-                product with real cross-company collaboration.
+                {{ $t("service_description_5") }}
               </p>
             </div>
           </div>
@@ -180,12 +174,10 @@
             ></span>
             <div>
               <h3 class="font-semibold text-xl tracking-tight text-black">
-                Technical assistance and problem resolution
+                {{ $t("service_title_6") }}
               </h3>
               <p class="mt-1 text-gray-300">
-                Keep your company’s lights on with customizable, iterative, and
-                structured workflows built for all efficient teams and
-                individual.
+                {{ $t("service_description_6") }}
               </p>
             </div>
           </div>

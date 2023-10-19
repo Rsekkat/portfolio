@@ -16,7 +16,7 @@
               -webkit-background-clip: text;
               color: transparent;
             "
-            >About</span
+            >{{ $t("about") }}</span
           >
         </h1>
         <div class="relative mx-auto max-w-5xl text-justify">
@@ -25,15 +25,6 @@
           >
             Rayan Sekkat dev web fullstack / devOps
           </h2>
-          <p
-            class="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400"
-          >
-            Hello and welcome to my website! I'm Rayan Sekkat, a dedicated and
-            passionate Fullstack developer, specializing in the creation of web
-            applications. With 3 years' experience in the development industry,
-            I'm ready to put my expertise to work on your most ambitious
-            projects.
-          </p>
         </div>
 
         <div
@@ -75,13 +66,13 @@
                 <line x1="17" y1="17" x2="17" y2="17.01"></line>
               </svg>
             </div>
-            <h3 class="mt-6 text-gray-400 text-center">Fullstack expertise</h3>
+            <h3 class="mt-6 text-gray-400 text-center">
+              {{ $t("about_title_1") }}
+            </h3>
             <p
               class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
             >
-              I have a solid grasp of front-end and back-end technologies,
-              enabling me to design robust solutions, from user interface to
-              database.
+              {{ $t("about_description_1") }}
             </p>
           </div>
 
@@ -100,12 +91,13 @@
             >
               <img src="../../assets/idea.png" />
             </div>
-            <h3 class="mt-6 text-gray-400 text-center">Technical creativity</h3>
+            <h3 class="mt-6 text-gray-400 text-center">
+              {{ $t("about_title_2") }}
+            </h3>
             <p
               class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
             >
-              My approach is focused on innovation. Every project is an
-              opportunity to explore new solutions.
+              {{ $t("about_description_2") }}
             </p>
           </div>
 
@@ -124,12 +116,13 @@
             >
               <img src="../../assets/infinity.png" />
             </div>
-            <h3 class="mt-6 text-gray-400 text-center">devOps</h3>
+            <h3 class="mt-6 text-gray-400 text-center">
+              {{ $t("about_title_3") }}
+            </h3>
             <p
               class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
             >
-              My approach is focused on innovation. Every project is an
-              opportunity to explore new solutions.
+              {{ $t("about_description_3") }}
             </p>
           </div>
 
@@ -167,13 +160,13 @@
                 <line x1="16" y1="17" x2="14.5" y2="18.5"></line>
               </svg>
             </div>
-            <h3 class="mt-6 text-gray-400 text-center">Quality first</h3>
+            <h3 class="mt-6 text-gray-400 text-center">
+              {{ $t("about_title_4") }}
+            </h3>
             <p
               class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
             >
-              My primary concern is code quality and user experience. Every line
-              of code I write is scrupulously scrutinized to guarantee reliable,
-              optimal performance.
+              {{ $t("about_description_4") }}
             </p>
           </div>
           <div
@@ -191,13 +184,13 @@
             >
               <img src="../../assets/collab.png" />
             </div>
-            <h3 class="mt-6 text-gray-400 text-center">Transparency and collaboration</h3>
+            <h3 class="mt-6 text-gray-400 text-center">
+              {{ $t("about_title_5") }}
+            </h3>
             <p
               class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
             >
-              I value open communication and close collaboration with my
-              customers. My aim is to fully understand their needs and satisfy
-              them to the best of my ability.
+              {{ $t("about_description_5") }}
             </p>
           </div>
           <div
@@ -215,12 +208,13 @@
             >
               <img src="../../assets/deadlines.png" />
             </div>
-            <h3 class="mt-6 text-gray-400 text-center">Respect for deadlines</h3>
+            <h3 class="mt-6 text-gray-400 text-center">
+              {{ $t("about_title_6") }}
+            </h3>
             <p
               class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
             >
-              I am committed to rigorously respecting deadlines in order to
-              deliver your projects on time, without compromising on quality.
+              {{ $t("about_description_6") }}
             </p>
           </div>
         </div>
@@ -252,3 +246,7 @@
     </div>
   </div>
 </template>
+
+<script setup>
+const { locale } = useI18n();
+</script>

@@ -21,6 +21,9 @@ export default defineEventHandler(async (event) => {
 const sendMail = (mailOptions: any) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: true, 
     auth: {
       user: EMAIL,
       pass: EMAIL_PASSWORD,
@@ -29,7 +32,7 @@ const sendMail = (mailOptions: any) => {
 
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
-      console.log(error);
+      console.log("Error sending email:", error);
     } else {
       console.log("Email sent: " + info.response);
     }

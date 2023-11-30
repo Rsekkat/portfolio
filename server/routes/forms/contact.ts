@@ -21,6 +21,9 @@ export default defineEventHandler(async (event) => {
 const sendMail = (mailOptions: any) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: true, 
     auth: {
       user: EMAIL,
       pass: EMAIL_PASSWORD,

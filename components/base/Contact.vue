@@ -140,6 +140,14 @@ const sendForm = async () => {
     method: "POST",
     body: JSON.stringify(form.value),
   });
+
+  const responseData = await response.json(); // Si le serveur renvoie du JSON
+
+  if (response.ok) {
+    console.log("Form submitted successfully");
+  } else {
+    console.error("Form submission failed:", responseData);
+  }
   console.log(response);
 };
 </script>

@@ -6,7 +6,7 @@
         class="relative block px-6 py-10 md:py-12 2xl:px-6 md:px-30 border-t border-b border-neutral-900 bg-neutral-900/30 flex flex-col items-center"
       >
         <h1
-          class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-justify pb-8"
+          class="mb-4 text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl text-justify pb-8"
         >
           <span
             class="text-transparent bg-clip-text bg-gradient-to-r"

@@ -12,7 +12,7 @@
     >
       <div class="max-w-4xl mx-auto xl:px-5">
         <h1
-          class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center"
+          class="mb-4 text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl text-center"
         >
           <span
             class="bg-clip-text bg-gradient-to-r font-bold tracking-tight text-gray-900"

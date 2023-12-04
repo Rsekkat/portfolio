@@ -22,3 +22,8 @@ logs
 .env
 .env.*
 !.env.example
+
+server/routes/forms/contact2.ts
+
+#app 
+app

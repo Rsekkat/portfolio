@@ -18,6 +18,9 @@ export default defineNuxtConfig({
     classSuffix: "-mode",
     storageKey: "nuxt-color-mode",
   },
+  runtimeConfig: {
+    SENDGRID_API_KEY: process.env.SENDGRID_API_KEY
+  },
   components: [
     {
       path: "~/components",

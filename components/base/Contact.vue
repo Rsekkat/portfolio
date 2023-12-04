@@ -77,7 +77,7 @@
                   ></textarea>
                 </div>
                 <button
-                  @click="sendForm"
+                  @click="sendMail"
                   class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                   style="
                     background-image: linear-gradient(
@@ -124,6 +124,8 @@
 </template>
 
 <script setup>
+// import { sendEmail } from "~/server/routes/forms/contact.post";
+
 const email = ref("");
 const subject = ref("");
 const message = ref("");
@@ -132,22 +134,82 @@ const form = computed(() => {
   return { email: email.value, subject: subject.value, message: message.value };
 });
 
-const sendForm = async () => {
-  const validate = validateFormArgs(email.value, subject.value, message.value);
-  console.log(validate);
+// const sendForm = async () => {
+//   try {
+//     // Assurez-vous que l'adresse e-mail de l'utilisateur est définie
+//     if (!form.value.email) {
+//       console.error("L'adresse e-mail est requise.");
+//       return;
+//     }
 
-  const response = await fetch("/forms/contact", {
+//     sendEmail(form.value.email, form.value.subject, form.value.message);
+
+//     if (response.ok) {
+//       // Réinitialisation du formulaire après l'envoi
+//       email.value = "";
+//       subject.value = "";
+//       message.value = "";
+
+//       // Autres actions après l'envoi réussi
+//       console.log("Formulaire soumis avec succès");
+//     } else {
+//       console.error("Échec de l'envoi du formulaire");
+//     }
+//   } catch (error) {
+//     console.error("Erreur lors de la soumission du formulaire :", error);
+//     // Gérer les erreurs d'envoi d'e-mail ici
+//   }
+// };
+
+// const sendForm = async () => {
+//   const validate = validateFormArgs(email.value, subject.value, message.value);
+//   console.log(validate);
+
+//   const response = await fetch("/forms/contact", {
+//     method: "POST",
+//     body: JSON.stringify(form.value),
+//   });
+
+//   const responseData = await response.json(); // Si le serveur renvoie du JSON
+
+//   if (response.ok) {
+//     console.log("Form submitted successfully");
+//   } else {
+//     console.error("Form submission failed:", responseData);
+//   }
+//   console.log(response);
+// };
+// Votre page Nuxt.js
+const sendMail = async () => {
+  let msg = {
+    personalizations: [
+      {
+        to: [
+          {
+            email: "rayan.sekkat@gmail.com",
+          },
+        ],
+      },
+    ],
+    from: {
+      email: "rayan.sekkat@gmail.com",
+    },
+    subject: "from: " + form.value.email + " "+ form.value.subject,
+    content: [
+      {
+        type: "text/plain",
+        value: form.value.message,
+      },
+      {
+        type: "text/html",
+        value: form.value.message,
+      },
+    ],
+  };
+  console.log(msg);
+  const { data } = await useFetch("/forms/contact", {
     method: "POST",
-    body: JSON.stringify(form.value),
+    body: msg,
   });
-
-  const responseData = await response.json(); // Si le serveur renvoie du JSON
-
-  if (response.ok) {
-    console.log("Form submitted successfully");
-  } else {
-    console.error("Form submission failed:", responseData);
-  }
-  console.log(response);
 };
 </script>

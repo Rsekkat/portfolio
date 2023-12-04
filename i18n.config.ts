@@ -53,6 +53,7 @@ export default defineI18nConfig(() => ({
       contact_message: "Your message",
       contact_message_placeholder: "Leave a comment...",
       contact_button: "Send message",
+      contact_toast: "message sent successfully",
     },
     fr: {
       about: "À propos",
@@ -106,6 +107,7 @@ export default defineI18nConfig(() => ({
       contact_message: "Votre message",
       contact_message_placeholder: "Laisser un commentaire...",
       contact_button: "Envoyer un message",
+      contact_toast: "Message envoyé avec succès"
     },
   },
 }));

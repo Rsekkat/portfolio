@@ -1,11 +1,9 @@
 <template>
   <!--Footer container-->
-  <footer
-    class="flex flex-col items-center text-center text-white"
-  >
+  <footer class="flex flex-col items-center text-center text-white">
     <div class="container pt-9">
       <div class="mb-9 flex justify-center">
-        <a href="#!" class="mr-9 text-neutral-800 dark:text-neutral-200">
+        <a href="#!" class="mr-9 text-neutral-800">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-4 w-4"
@@ -17,7 +15,7 @@
             />
           </svg>
         </a>
-        <a href="#!" class="mr-9 text-neutral-800 dark:text-neutral-200">
+        <a href="#!" class="mr-9 text-neutral-800">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
@@ -33,7 +31,7 @@
         </a>
         <a
           href="https://www.linkedin.com/in/rayan-sekkat-3911a9294/"
-          class="mr-9 text-neutral-800 dark:text-neutral-200"
+          class="mr-9 text-neutral-800"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +44,7 @@
             />
           </svg>
         </a>
-        <a href="https://github.com/Rsekkat" class="text-neutral-800 dark:text-neutral-200">
+        <a href="https://github.com/Rsekkat" class="text-neutral-800">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-4 w-4"
@@ -62,11 +60,9 @@
     </div>
 
     <!--Copyright section-->
-    <div class="w-full p-4 text-center text-neutral-800 dark:text-neutral-400">
+    <div class="w-full p-4 text-center text-neutral-800">
       © 2023 Copyright:
-      <a
-        class="text-neutral-800 dark:text-neutral-400"
-        href="https://tailwind-elements.com/"
+      <a class="text-neutral-800" href="https://tailwind-elements.com/"
         >Rayan Sekkat</a
       >
     </div>
